@@ -3,6 +3,8 @@
     <head>
         <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
         <script src="aframe-particle-system-component/dist/aframe-particle-system-component.min.js"></script>
+        <script src="more-link.js"></script>
+        <script src="link.js"></script>
     </head>
     <body>
         <a-scene>
@@ -24,7 +26,7 @@
             
             <a-sphere id="globe" material="src: #globe" radius="5" position="0 0 -7"><a-animation attribute="rotation" dur="7769.23" fill="forwards" to="-100 0 0"> </a-animation></a-sphere>
             <a-sky material="src: #space"></a-sky>
-            <a-sphere material="src:#moonTexture" radius=".7" position="-2.261 4.923 8.128"></a-sphere>
+            <a-sphere href="index.html" material="src:#moonTexture" radius=".7" position="-2.261 4.923 8.128"></a-sphere>
             <a-text value="Antarctica" position="-0.10 1.48 -1.5" color="black" width="2"></a-text>
             <a-sphere id= pin color="red" radius=".05" position="0.07 1.38 -1.5"></a-sphere>
             <!--<a-entity position="0 2.25 -15" particle-system="preset: dust; particleCount: 10000"></a-entity>-->
