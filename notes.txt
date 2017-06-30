@@ -1,0 +1,2 @@
+link facebook using firebase = node.js
+first, hard code vr profiles

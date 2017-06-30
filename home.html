@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+        <script src="more-link.js"></script>
+        <script src="link.js"></script>
+    </head>
+    <body>
+        
+        <a-scene>
+            <a-asset>
+                <img id="rwandaflag" src="images/rwandaflag.png"/>
+                <img id="usflag" src="images/usflag.jpg"/>
+                <img id="aussieflag" src="images/aussieflag.png"/>
+                <img id="antarcticaflag" src="images/antarcticaflag.png"/>
+                <img id="brazilflag" src="images/brazilflag.png"/>
+                <img id="bulgariaflag" src="images/bulgariaflag.png"/>
+            </a-asset>
+            <a-sky color="#B9D2B1"></a-sky>
+            
+            <a-link href="rwanda.html" title="My Homepage" image="#rwandaflag" position="0 1 -5"></a-link>
+            
+            <a-text color="#FBACBE" value="RWANDA" depth="1" height="2" width="15" position="-1.4 1.9 -4.33"></a-text>
+            <a-box href="rwanda.html" id="rwanda" material="src: #rwandaflag" depth="0.2" height="3" width="5" position="0 0 -4.33"  rotation="0 0 0"></a-box>
+            
+            <a-text color="#FBACBE" value="CA, USA" depth="1" height="2" width="15" position="-6.1 1.9 -2.5" rotation="0 45 0"></a-text>
+            <a-box href="cali.html" id="usa" material="src: #usflag" depth="0.2" height="3" width="5" position="-4.41 0 -2.5"  rotation="0 45 0"></a-box>
+            
+            <a-text color="#FBACBE" value="AUSTRALIA" depth="1" height="2" width="15" position="-6.22 1.9 3.79" rotation="0 90 0"></a-text>
+            <a-box href="australia.html" id="aussie" material="src: #aussieflag" depth="0.2" height="3" width="5" position="-6.22 0 1.91"  rotation="0 90 0"></a-box>
+            
+            <a-text color="#FBACBE" value="ANTARCTICA" depth="1" height="2" width="15" position="-2.6 1.9 7.6" rotation="0 135 0"></a-text>
+            <a-box href="antarctica.html" id="chilly" material="src: #antarcticaflag" depth="0.2" height="3" width="5" position="-4.36 0 6.33"  rotation="0 135 0"></a-box>
+            
+            <a-text color="#FBACBE" value="BRAZIL" depth="1" height="2" width="15" position="1.17 1.9 8.28" rotation="0 180 0"></a-text>
+            <a-box href="brazil.html" id="brazil" material="src: #brazilflag" depth="0.2" height="3" width="5" position="0.19 0 8.17"  rotation="0 180 0"></a-box>
+        
+
+            <a-text color="#FBACBE" value="BULGARIA" depth="1" height="2" width="15" position="5.73 1.9 5.02" rotation="0 225 0"></a-text>
+            <a-box href="bulgaria.html" id="bulgaria" material="src: #bulgariaflag" depth="0.2" height="3" width="5" position="4.68 0 6.33"  rotation="0 225 0"></a-box>
+            
+             <a-entity position="0 .6 4">
+        <a-camera>
+                <a-cursor></a-cursor>
+            </a-camera>
+    </a-entity>
+
+    
+        </a-scene>
+        <script>
+        document.querySelector('#rwanda').navigate('rwanda.html');
+
+        //   var place1 = document.getElementById("rwanda")
+        //   place1.addEventListener("click", function(){
+        //       console.log("im clicked")
+               
+        //   })
+        </script>
+    </body>
+</html>
